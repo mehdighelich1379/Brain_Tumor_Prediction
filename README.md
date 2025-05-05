@@ -26,7 +26,7 @@ The features (independent variables) are separated from the target variable (dia
 
 3. ## Data Splitting
 
-The dataset is split into training and testing sets using an 80-20 split. This means 80% of the data is used for training the model, and the remaining 20% is kept aside for testing the model's performance.
+The dataset is split into training and testing sets using an 70-30 split. This means 70% of the data is used for training the model, and the remaining 30% is kept aside for testing the model's performance.
 
 4. ##  Model Building
 
@@ -40,13 +40,34 @@ The model is trained using the training data, and the performance is validated u
 
 After training the model, its performance is evaluated on the test data. Key metrics such as accuracy, recall, precision, F1-score, and the Area Under the ROC Curve (AUC) are computed to assess the model's effectiveness.
 
-7. ##  Model Performance Metrics
+7. ###  Model Performance Metrics
+7-1) ## RandomForestClassifier model
+Accuracy: 97.9%
+Recall: 98.14%
+Precision: 96.36%
+F1-Score: 97.24%
+AUC: 98 %
 
-Accuracy: 97%
-Recall: 97.6%
-Precision: 95.45%
-F1-Score: 97.36%
-AUC: 1.0
+7-2) ## xgboost model
+Accuracy: 96%
+Recall: 96%
+Precision: 96%
+F1-Score: 96%
+AUC: 96%
+
+7-3) ## catboost model
+Accuracy: 97.9%
+Recall: 96.29%
+Precision: 98.11%
+F1-Score: 97.19%
+AUC: 98%
+
+7-1) sequential model
+Accuracy: 98%
+Recall: 98%
+Precision: 98%
+F1-Score: 98%
+AUC: 1.00%
 
 8. ##  Visualization
 
@@ -55,15 +76,9 @@ Loss and Accuracy Graphs: Training and validation loss/accuracy over epochs are 
 ROC Curve: The Receiver Operating Characteristic (ROC) curve is plotted, with AUC value indicating the model's classification performance.
 Confusion Matrix: The confusion matrix is visualized to show the model's classification results, highlighting the correct and incorrect predictions for benign and malignant tumors.
 
-9. ##  Confusion Matrix Interpretation
 
-The confusion matrix provides the following insights:
-69 benign tumors were correctly predicted as benign.
-1 malignant tumor was incorrectly predicted as benign.
-2 benign tumors were incorrectly predicted as malignant.
-42 malignant tumors were correctly predicted as malignant.
 
-10. ##  Conclusion
+9. ##  Conclusion
 
-The deep learning model was able to classify brain tumors into benign and malignant categories with high accuracy. The model achieved a 97% accuracy on the test data, and its performance was further validated with high values for recall, precision, F1-score, and AUC. The confusion matrix confirmed the model's effectiveness, with a few misclassifications that are common in real-world scenarios.
+The deep learning model was able to classify brain tumors into benign and malignant categories with high accuracy. The model achieved a 98% accuracy on the test data, and its performance was further validated with high values for recall, precision, F1-score, and AUC. The confusion matrix confirmed the model's effectiveness, with a few misclassifications that are common in real-world scenarios.
 
