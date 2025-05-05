@@ -41,28 +41,28 @@ The model is trained using the training data, and the performance is validated u
 After training the model, its performance is evaluated on the test data. Key metrics such as accuracy, recall, precision, F1-score, and the Area Under the ROC Curve (AUC) are computed to assess the model's effectiveness.
 
 7. ###  Model Performance Metrics
-7-1) ## RandomForestClassifier model
+7-1)  RandomForestClassifier model
 Accuracy: 97.9%
 Recall: 98.14%
 Precision: 96.36%
 F1-Score: 97.24%
 AUC: 98 %
 
-7-2) ## xgboost model
+7-2)  xgboost model
 Accuracy: 96%
 Recall: 96%
 Precision: 96%
 F1-Score: 96%
 AUC: 96%
 
-7-3) ## catboost model
+7-3)  catboost model
 Accuracy: 97.9%
 Recall: 96.29%
 Precision: 98.11%
 F1-Score: 97.19%
 AUC: 98%
 
-7-1) sequential model
+7-1)  sequential model
 Accuracy: 98%
 Recall: 98%
 Precision: 98%
